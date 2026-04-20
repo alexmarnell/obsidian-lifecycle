@@ -39,13 +39,13 @@ All organization lives in `Catalog/`:
 
 ## Plugins
 
-**[Templater](https://github.com/SilentVoid13/Templater)** is the only required community plugin. It powers the Daily Note template, which includes a custom script (`Resources/Scripts/connections.js`) that automatically links each daily note to the previous one — even when there are gaps (weekends, holidays, missed days). This is something Obsidian's built-in daily notes can't do.
+**[Templater](https://github.com/SilentVoid13/Templater)** is the only required community plugin. It powers the Daily Note template, which includes a custom script ([`Resources/Scripts/connections.js`](Resources/Scripts/connections.js)) that automatically links each daily note to the previous one — even when there are gaps (weekends, holidays, missed days). This is something Obsidian's built-in daily notes can't do.
 
 All other automation (markdown formatting, note organization) is handled by Claude Code skills — no additional Obsidian plugins needed.
 
 ## Claude Code Integration
 
-This vault includes a `CLAUDE.md` and skills for use with [Claude Code](https://claude.ai/code):
+This vault includes a [`CLAUDE.md`](CLAUDE.md) and skills for use with [Claude Code](https://claude.ai/code):
 
 - **`/sort`** — Processes the Collect folder: classifies notes and moves them to appropriate destinations
 - **`/format`** — Standardizes note formatting to vault conventions
