@@ -35,6 +35,7 @@ All organization lives in `Catalog/`:
 5. Restart Obsidian — Templater configuration is pre-shipped, no setup needed
 6. Start capturing notes in `Collect/`
 7. Read [`Library/Obsidian - Lifecycle System.md`](Library/Obsidian%20-%20Lifecycle%20System.md) for the full system guide
+8. Optionally, read [`Library/Obsidian - Note-Taking Style Guide.md`](Library/Obsidian%20-%20Note-Taking%20Style%20Guide.md) for writing conventions that support the system
 
 ## Plugins
 
