@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.folder == "Collect"
+views:
+  - type: table
+    name: Collect Items
+    columns:
+      - property: file.name
+        label: Note
+      - property: file.ctime
+        label: Created
+      - property: tags
+        label: Tags

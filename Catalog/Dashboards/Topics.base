@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.folder == "Catalog/Topics"
+views:
+  - type: table
+    name: Knowledge Domains
+    columns:
+      - property: file.name
+        label: Topic
+      - property: file.mtime
+        label: Updated

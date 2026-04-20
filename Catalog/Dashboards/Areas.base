@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.folder == "Catalog/Areas"
+views:
+  - type: table
+    name: Areas of Responsibility
+    columns:
+      - property: file.name
+        label: Area
+      - property: file.mtime
+        label: Updated

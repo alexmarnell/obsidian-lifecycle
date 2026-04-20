@@ -1,0 +1,11 @@
+filters:
+  and:
+    - file.folder == "Catalog/Projects"
+views:
+  - type: table
+    name: Active Projects
+    columns:
+      - property: file.name
+        label: Project
+      - property: tags
+        label: Tags

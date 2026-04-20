@@ -1,0 +1,13 @@
+filters:
+  and:
+    - file.folder == "Library"
+views:
+  - type: table
+    name: Library Notes
+    columns:
+      - property: file.name
+        label: Title
+      - property: file.mtime
+        label: Modified
+      - property: tags
+        label: Tags

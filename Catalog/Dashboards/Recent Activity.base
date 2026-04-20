@@ -1,0 +1,16 @@
+filters:
+  and:
+    - file.folder != "Daily"
+    - file.folder != "Archive"
+    - file.folder != "Resources/Templates"
+    - file.folder != "Resources/Attachments"
+views:
+  - type: table
+    name: Recent Activity
+    columns:
+      - property: file.name
+        label: File
+      - property: file.folder
+        label: Location
+      - property: file.mtime
+        label: Modified

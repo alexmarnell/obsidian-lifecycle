@@ -1,0 +1,8 @@
+{
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "Collect",
+  "attachmentFolderPath": "Resources/Attachments",
+  "propertiesInDocument": "visible"
+}
