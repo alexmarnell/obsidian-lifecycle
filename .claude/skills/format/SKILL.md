@@ -32,14 +32,13 @@ Standardize Obsidian note formatting according to vault conventions documented i
 - Tagging philosophy (backlinks over tags, durable tags only)
 - `related` property convention for Library notes
 
-## File Title Updater Plugin
+## H1/Filename Convention
 
-The vault uses the **File Title Updater** plugin (`syncMode: "filename_heading"`), which keeps the H1 heading and filename in sync automatically. Because of this:
+Every note's H1 heading must match its filename exactly (`showInlineTitle` is disabled, so the H1 is the only visible title). When formatting:
 
-- **Never modify H1 headings** — any change to the H1 will trigger a filename rename (and vice versa)
+- **If H1 is missing**, add one matching the filename (without extension)
+- **If H1 doesn't match the filename**, flag the mismatch in your report for user review — do not silently rename files or change H1s
 - **Never add wiki-links to H1 titles** (e.g., don't convert `# 2026-02-05` to `# [[2026-02-05]]`)
-- If a note is missing an H1, the plugin will handle it — don't add one manually
-- Focus formatting efforts on H2+ headings and body content only
 
 ## Note Type Detection
 
@@ -187,7 +186,7 @@ But inline links in the body (`...as described in [[Observability (MOC)]]...`) a
 #### Daily Note Structure
 
 **Required sections (in order):**
-1. `# YYYY-MM-DD` (H1 title — managed by File Title Updater plugin, do not modify)
+1. `# YYYY-MM-DD` (H1 title — must match filename)
 2. `## Focus`
 3. `## Log`
 4. `## Connections`
@@ -537,7 +536,7 @@ Met with the team about the [[Website Redesign (MOC)]] project.
 3. Converted checkbox format for tasks
 4. Added wiki-link for project reference
 5. Added proper spacing throughout
-6. H1 title left as-is (managed by File Title Updater plugin)
+6. H1 title verified to match filename
 
 ### Example 2: Project MOC — Adding Durable Tag
 
@@ -576,7 +575,7 @@ Started in late 2025.
 **Changes Applied:**
 1. Added `catalog/project` durable tag to YAML frontmatter
 2. Added wiki-link to Library note
-3. H1 title left as-is (managed by File Title Updater plugin)
+3. H1 title verified to match filename
 
 ### Example 3: Library Note — Stray Tags and Missing Related
 

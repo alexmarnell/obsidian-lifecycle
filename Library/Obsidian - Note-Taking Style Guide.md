@@ -100,7 +100,7 @@ The first 1-2 sentences are critical for:
 
 Follow Obsidian markdown conventions:
 
-- **H1** (`#`): Note title — must be explicitly written at the top of every note and match the filename exactly. The File Title Updater plugin keeps the H1 title and filename in sync; do not rely on Obsidian's "Inline title" display feature.
+- **H1** (`#`): Note title — must be explicitly written at the top of every note and match the filename exactly. The vault has "Inline title" disabled, so the H1 is the only visible title. When renaming a file, update the H1 to match.
 - **H2** (`##`): Major sections
 - **H3** (`###`): Subsections
 - **Avoid H4+**: If you need H4 or deeper, consider splitting the note

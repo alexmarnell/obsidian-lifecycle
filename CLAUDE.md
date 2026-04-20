@@ -121,7 +121,7 @@ Tags are ONLY for **durable metadata** — attributes that need to survive folde
 - Area MOC Template - For ongoing responsibilities (includes `tags: [catalog/area]`)
 - Topic MOC Template - For knowledge domains (includes `tags: [catalog/topic]`)
 
-**File Title Updater plugin:** The vault uses the File Title Updater plugin to keep filenames and H1 headings in sync (`syncMode: filename_heading`). Never modify H1 headings directly — rename the file instead, and the H1 will update automatically (and vice versa).
+**H1/Filename convention:** Every note's H1 heading must match its filename exactly. Since `showInlineTitle` is disabled, the H1 is the only visible title. When renaming a file, update the H1 to match (and vice versa). The `/format` skill enforces this convention.
 
 **Daily notes configuration:**
 - Folder: `Daily/`
@@ -129,9 +129,7 @@ Tags are ONLY for **durable metadata** — attributes that need to survive folde
 - Format: `YYYY-MM-DD.md`
 
 **Community plugins:**
-- **Templater** - Template engine with scripting support
-- **Obsidian Linter** - Markdown formatting on save
-- **File Title Updater** - Keeps filenames and H1 headings in sync
+- **Templater** - Template engine with scripting support (the only required community plugin). Markdown formatting is handled by the `/format` skill.
 
 ## Templater Development Practices
 

@@ -30,9 +30,17 @@ All organization lives in `Catalog/`:
 
 1. Clone or download this vault
 2. Open the folder in Obsidian
-3. Install community plugins when prompted (Templater, Linter, File Title Updater)
-4. Start capturing notes in `Collect/`
-5. Read `Library/Obsidian - Lifecycle System.md` for the full system guide
+3. When prompted about Restricted Mode, click **"Turn on community plugins"**
+4. Go to **Settings → Community plugins → Browse**, search for **Templater**, then click **Install** and **Enable**
+5. Restart Obsidian — Templater configuration is pre-shipped, no setup needed
+6. Start capturing notes in `Collect/`
+7. Read [`Library/Obsidian - Lifecycle System.md`](Library/Obsidian%20-%20Lifecycle%20System.md) for the full system guide
+
+## Plugins
+
+**[Templater](https://github.com/SilentVoid13/Templater)** is the only required community plugin. It powers the Daily Note template, which includes a custom script (`Resources/Scripts/connections.js`) that automatically links each daily note to the previous one — even when there are gaps (weekends, holidays, missed days). This is something Obsidian's built-in daily notes can't do.
+
+All other automation (markdown formatting, note organization) is handled by Claude Code skills — no additional Obsidian plugins needed.
 
 ## Claude Code Integration
 
@@ -40,6 +48,10 @@ This vault includes a `CLAUDE.md` and skills for use with [Claude Code](https://
 
 - **`/sort`** — Processes the Collect folder: classifies notes and moves them to appropriate destinations
 - **`/format`** — Standardizes note formatting to vault conventions
+
+### Recommended Skills
+
+- **[Obsidian CLI Skill](https://github.com/pablo-mano/Obsidian-CLI-skill)** — Manage your vault from the terminal using Obsidian's built-in CLI (v1.12+). Useful for file operations, search, and plugin management without leaving Claude Code.
 
 ## Key Principles
 
